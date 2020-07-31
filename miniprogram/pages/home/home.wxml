@@ -1,0 +1,80 @@
+<view class="home">
+
+  <view class="home-title">
+
+    <view>
+      <view class="title">本月结余</view>
+      <view class="title-money clearfix">
+        <view class="fl">￥{{currentMonthBookingData.jieyu[0]}}.</view>
+        <view class="decimal fl">{{currentMonthBookingData.jieyu[1]}}</view>
+      </view>
+    </view>
+
+    <view class="home-text">
+
+      <view class="home-text-item">
+        <view class="clearfix">
+          <view class="fl">本月收入</view>
+          <view class="fl money-text">￥{{currentMonthBookingData.shouru}}</view>
+        </view>
+        
+      </view>
+      <view class="home-text-item">
+        <view class="clearfix">
+          <view class="fl">本月支出</view>
+          <view class="fl money-text">￥{{currentMonthBookingData.zhichu}}</view>
+        </view>
+        
+      </view>
+
+    </view>
+  </view>
+
+  <view class="home-content">
+    <view class="clearfix">
+
+      <view class="fl content">
+        <view class="fl">{{currentDate}}</view>
+        <view class="fl content-item">
+          <view>收入：￥{{currentDayBookingData.shouru}}</view>
+        </view>
+        <view class="fl content-item">
+          <view>支出：￥{{currentDayBookingData.zhichu}}</view>
+        </view>
+      </view>
+
+      <view class="fr date">
+        <view class="clearfix date-box">
+          <view class="fl point"></view>
+          <view class="fl point"></view>
+          <view class="fl point"></view>
+        </view>
+        <picker class="picker-box" bindchange="selectDate" mode="date" start="{{dateRange.start}}" end="{{dateRange.end}}">
+          请选择日期
+        </picker>
+      </view>
+    </view>
+
+    <view class="list">
+
+      <view class="list-item clearfix" wx:for="{{bookingData}}" wx:key="index">
+        <view class="fl list-icon">
+          <image class="auto-img list-icon-img" src="{{item.bookingType.url}}" mode="widthFix"></image>
+        </view>
+        <view class="fl list-content">
+          <view class="fl left-content">
+            <view class="clearfix {{item.userBooking.comment == '' ? 'not-comment' : 'top-text'}}">
+              <view class="fl type">{{item.bookingType.title}}</view>
+              <view class="fl">{{item.accountType}}</view>
+            </view>
+            <view class="comment" wx:if="{{item.userBooking.comment != ''}}">{{item.userBooking.comment}}</view>
+          </view>
+          <view class="fr money-t {{item.costType.type}}">￥{{item.userBooking.money}}</view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>

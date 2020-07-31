@@ -1,0 +1,68 @@
+<view class="booking">
+
+  <view class="booking-bg"></view>
+
+  <view class="booking-box">
+
+    <view class="booking-box-title">
+      <view>
+        <view class="title clearfix">
+          <view class="fl title-item {{item.isActive ? 'active' : ''}}" wx:for="{{tagData}}" wx:key="index" data-index="{{index}}" data-active="{{item.isActive}}" data-key="tagData" bindtap="toggleTag">{{item.title}}</view>
+        </view>
+      </view>
+
+      <view class="icons-box clearfix">
+
+        <view class="fl icons-item" wx:for="{{icons}}" wx:key="index" data-index="{{index}}" data-active="{{item.isActive}}" data-key="icons" bindtap="toggleTag">
+          <view class="item-box {{item.isActive ? 'active' : ''}}">
+            <view class="item-box-img">
+              <image class="auto-img icons-img-box" mode="widthFix" src="{{item.url}}"></image>
+            </view>
+            <view class="item-box-text">{{item.title}}</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="account">
+      <view class="account-title">账户选择</view>
+      <view class="account-items clearfix">
+        <view class="fl account-item {{item.isActive ? 'active' : ''}}" wx:for="{{accountData}}" wx:key="index" data-index="{{index}}" data-active="{{item.isActive}}" data-key="accountData" bindtap="toggleTag">{{item.title}}</view>
+      </view>
+    </view>
+
+    <view class="booking-info">
+
+      <view class="booking-item clearfix">
+        <view class="fl booking-item-title">日期</view>
+        <view class="fl booking-date">
+          <picker class="picker-box" bindchange="userBookingInfo" data-key="date" mode="date" start="2019-09-01" end="2020-09-01">
+            {{bookingInfo.date}}
+          </picker>
+        </view>
+      </view>
+
+      <view class="booking-item clearfix">
+        <view class="fl booking-item-title">金额</view>
+        <view class="fl booking-date">
+          <input class="weui-input" bindchange="userBookingInfo" data-key="money" type="digit" placeholder="输入金额"/>
+        </view>
+      </view>
+
+      <view class="booking-item clearfix">
+        <view class="fl booking-item-title">备注</view>
+        <view class="fl booking-date">
+          <input class="weui-input" bindchange="userBookingInfo" data-key="comment" placeholder="输入备注" maxlength="20" />
+        </view>
+      </view>
+
+      
+
+    </view>
+
+    <view class="save" bindtap="save">保存</view>
+
+  </view>
+
+</view>

@@ -1,0 +1,8 @@
+.auth{
+  padding-top: 100rpx;
+}
+
+.auth button:not([size='mini']){
+  background-color: #33c9ff;
+  font-weight: normal;
+}

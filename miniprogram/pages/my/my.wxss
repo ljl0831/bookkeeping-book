@@ -1,0 +1,49 @@
+.my-bg{
+  background-color: #33c9ff;
+  padding: 80rpx 0;
+}
+
+.my-img{
+  width: 160rpx;
+  height: 160rpx;
+  background-color: #fff;
+  box-shadow: 0 0 0 10rpx rgba(255, 255, 255, .5);
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.my-img-box{
+  height: 160rpx;
+}
+
+.nickname{
+  font-size: 32rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.list{
+  background-color: #fff;
+}
+
+.list-item{
+  padding: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.list-item:not(:last-child){
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.arrow{
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 27rpx;
+}
+
+.arrow-img{
+  height: 28rpx;
+}

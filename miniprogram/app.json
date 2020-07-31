@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/booking/booking",
+    "pages/chart/chart",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/mybooking/mybooking",
+    "pages/auth/auth"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#33c9ff",
+    "navigationBarTitleText": "记账本",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor": "#1d82fe",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./icons/home.png",
+        "selectedIconPath": "./icons/home_active.png"
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "记账",
+        "iconPath": "./icons/booking.png",
+        "selectedIconPath": "./icons/booking_active.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "iconPath": "./icons/chart.png",
+        "selectedIconPath": "./icons/chart_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./icons/my.png",
+        "selectedIconPath": "./icons/my_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

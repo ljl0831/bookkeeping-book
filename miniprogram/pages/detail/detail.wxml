@@ -1,0 +1,19 @@
+<view class="list">
+
+	<view class="list-item clearfix" wx:for="{{bookingData}}" wx:key="index">
+		<view class="fl list-icon">
+			<image class="auto-img list-icon-img" src="{{item.bookingType.url}}" mode="widthFix"></image>
+		</view>
+		<view class="fl list-content">
+			<view class="fl left-content">
+				<view class="clearfix {{item.userBooking.comment == '' ? 'not-comment' : 'top-text'}}">
+					<view class="fl type">{{item.bookingType.title}}</view>
+					<view class="fl">{{item.accountType}}</view>
+				</view>
+				<view class="comment" wx:if="{{item.userBooking.comment != ''}}">{{item.userBooking.comment}}</view>
+			</view>
+			<view class="fr money-t {{item.costType.type}}">￥{{item.userBooking.money}}</view>
+		</view>
+	</view>
+
+</view>

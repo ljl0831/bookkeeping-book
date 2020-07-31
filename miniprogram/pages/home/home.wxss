@@ -1,0 +1,149 @@
+.home-title{
+  background-color: #33c9ff;
+  padding: 60rpx;
+}
+
+.title{
+  font-size: 36rpx;
+}
+
+.title-money{
+  font-weight: bold;
+  font-size: 48rpx;
+  margin-top: 20rpx;
+}
+
+.home-text{
+  margin-top: 60rpx;
+  position: relative;
+}
+
+.home-text-item{
+  width: 50%;
+  font-size: 32rpx;
+  color: #666;
+}
+
+.home-text-item:first-child{
+  margin-bottom: 20rpx;
+}
+
+.money-text{
+  margin-left: 20rpx;
+}
+
+.home-content{
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.content{
+  width: calc(100% - 48rpx);
+  font-size: 24rpx;
+  color: #666;
+}
+
+.date{
+  width: 48rpx;
+  height: 32rpx;
+  position: relative;
+}
+
+.picker-box{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 5;
+}
+
+.content-item{
+  margin-left: 20rpx;
+}
+
+.list{
+  padding-top: 10rpx;
+}
+
+.point{
+  width: 8rpx;
+  height: 8rpx;
+  background-color: #666;
+  border-radius: 50%;
+  margin: 0 4rpx;
+}
+
+.date-box{
+  margin-top: 12rpx;
+}
+
+.list-item{
+  padding: 10rpx 0;
+}
+
+.list-icon{
+  width: 70rpx;
+  height: 70rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.list-content{
+  width: calc(100% - 90rpx);
+  height: 70rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+  padding-left: 20rpx;
+}
+
+.money-t{
+  font-weight: bold;
+  line-height: 70rpx;
+  font-size: 28rpx;
+}
+
+.shouru{
+  color: #e4393c;
+}
+
+.zhichu{
+  color: #00B26A;
+}
+
+.left-content{
+  font-size: 22rpx;
+  color: #666;
+}
+
+.top-text{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.comment{
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.type{
+  font-weight: bold;
+  margin-right: 20rpx;
+  color: #444;
+}
+
+.not-comment{
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.list-icon-img{
+  height: 70rpx;
+}
+
+.decimal{
+  font-size: 32rpx;
+  line-height: 77.5rpx;
+}

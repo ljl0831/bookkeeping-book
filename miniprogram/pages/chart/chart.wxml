@@ -1,0 +1,58 @@
+<view class="charts">
+
+  <view class="nav-box clearfix">
+    <view class="fl input-box">
+      <picker class="picker-box" mode="date" start="{{date.start}}" end="{{date.end}}" bindchange="selectDate">{{currentDate}}</picker>
+    </view>
+    <view class="fl condition" bindtap="toggleDateType">{{dateType.titles[dateType.default]}}查询</view>
+  </view>
+
+  <view class="charts-content">
+
+    <view class="charts-title clearfix">
+
+      <view class="fl charts-title-item" wx:for="{{titleData}}" wx:key="index" data-index="{{index}}" data-active="{{item.isActive}}" bindtap="toggleTitle">
+        <view class="c-item {{item.isActive ? item.type : ''}}">
+          <view class="date-title">{{dateType.titles[dateType.default]}}{{item.title}}</view>
+          <view class="money {{item.type}}">￥{{item.total}}</view>
+        </view>
+      </view>
+
+    </view>
+
+    <!-- 饼图 -->
+    <view class="pie-box" hidden="{{typesData[currentType].length == 0}}">
+
+      <canvas style="width: {{canvasWidth + 'px'}};" class="canvas" canvas-id="pieCanvas"></canvas>
+    
+    </view>
+
+    <view class="type-box">
+
+      <view class="type-item clearfix" wx:for="{{typesData[currentType]}}" wx:key="index" data-ids="{{item.ids}}" data-title="{{item.title}}" data-costtitle="{{item.costTitle}}" bindtap="viewDetail">
+        <view class="fl t-icon">
+          <image class="auto-img t-icon-img" src="{{item.url}}" mode="widthFix"></image>
+        </view>
+        <view class="fl t-item">
+          <view class="ty-item">
+            <view class="fl ty-item-text">{{item.title}}</view>
+            <view class="fr type-item-{{currentType}}">￥{{item.total}}</view>
+          </view>
+          <view class="ty-item">
+            <view class="fl progress">
+              <view class="active-progress" style="width: {{item.percent}};background-color: {{item.color}};"></view>
+            </view>
+            <view class="fr count">{{item.count}}笔</view>
+          </view>
+        </view>
+        <view class="fl t-arrow">
+          <image class="auto-img t-arrow-img" src="../../icons/right-arrow.png" mode="widthFix"></image>
+        </view>
+      </view>
+
+    </view>
+
+
+  </view>
+
+</view>

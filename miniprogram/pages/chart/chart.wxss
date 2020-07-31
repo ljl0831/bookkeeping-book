@@ -1,0 +1,166 @@
+.nav-box{
+  padding: 20rpx;
+  background-color: #33c9ff;
+}
+
+.input-box{
+  width: calc(100% - 200rpx);
+  margin-right: 20rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+}
+
+.condition{
+  height: 60rpx;
+  width: 120rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.picker-box{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.charts-title{
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.charts-title-item{
+  width: 50%;
+  height: 106rpx;
+  position: relative;
+}
+
+.c-item{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28rpx;
+  padding:10rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  font-weight: bold;
+  border: 3rpx solid transparent;
+}
+
+.c-item.shouru{
+  border-color: #e4393c;
+}
+
+.c-item.zhichu{
+  border-color: #00B26A;
+}
+
+.date-title,.money{
+  height: 40rpx;
+}
+
+.money.shouru{
+  color: #e4393c;
+}
+
+.money.zhichu{
+  color: #00B26A;
+}
+
+.pie-box{
+  height: 600rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.type-box{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.type-item{
+  padding: 20rpx;
+  background-color: #fff;
+}
+.type-item:not(:last-child) {
+  border-bottom: 1rpx solid #e8e8e8;
+}
+
+.t-icon{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #e8e8e8;
+  border-radius: 50%;
+}
+
+.t-arrow{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+}
+
+.t-item{
+  width: calc(100% - 160rpx);
+  margin: 0 20rpx;
+}
+
+.ty-item{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.ty-item-text{
+  font-size: 28rpx;
+}
+
+.type-item-shouru{
+  font-size: 28rpx;
+  color: #e4393c;
+  font-weight: bold;
+}
+
+.type-item-zhichu{
+  font-size: 28rpx;
+  color: #00B26A;
+  font-weight: bold;
+}
+
+.count{
+  color: #666;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  width: 100rpx;
+  text-align: right;
+}
+
+.progress{
+  width: calc(100% - 100rpx);
+  height: 20rpx;
+  margin-top: 10rpx;
+  background-color: #e8e8e8;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.active-progress{
+  height: 100%;
+  width: 0;
+ transition: width .3s linear, background-color .3 linear;
+}
+
+.t-icon-img{
+  height: 80rpx;
+}
+
+.t-arrow-img{
+  height: 40rpx;
+}
+
+.canvas{
+  height: 600rpx;
+}

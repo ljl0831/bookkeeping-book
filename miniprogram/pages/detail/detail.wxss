@@ -1,0 +1,84 @@
+.list{
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+}
+
+.point{
+  width: 8rpx;
+  height: 8rpx;
+  background-color: #666;
+  border-radius: 50%;
+  margin: 0 4rpx;
+}
+
+.date-box{
+  margin-top: 12rpx;
+}
+
+.list-item{
+  padding: 10rpx 0;
+}
+
+.list-icon{
+  width: 70rpx;
+  height: 70rpx;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.list-content{
+  width: calc(100% - 90rpx);
+  height: 70rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #e8e8e8;
+  padding-left: 20rpx;
+}
+
+.money-t{
+  font-weight: bold;
+  line-height: 70rpx;
+  font-size: 28rpx;
+}
+
+.shouru{
+  color: #e4393c;
+}
+
+.zhichu{
+  color: #00B26A;
+}
+
+.left-content{
+  font-size: 22rpx;
+  color: #666;
+}
+
+.top-text{
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.comment{
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.type{
+  font-weight: bold;
+  margin-right: 20rpx;
+  color: #444;
+}
+
+.not-comment{
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.list-icon-img{
+  height: 70rpx;
+}
+
+.time{
+  font-size: 20rpx;
+  margin-left: 20rpx;
+}
