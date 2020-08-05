@@ -12,6 +12,6 @@ exports.main = async (event, context) => {
     return db.collection('booking').where(event).get();
 
   } catch (err) {
-    
+     
   }
 }

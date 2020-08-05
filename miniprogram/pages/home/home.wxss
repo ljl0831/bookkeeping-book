@@ -106,11 +106,11 @@
 }
 
 .shouru{
-  color: #e4393c;
-}
+  color: #00B26A;
+} 
 
 .zhichu{
-  color: #00B26A;
+  color: #e4393c;
 }
 
 .left-content{

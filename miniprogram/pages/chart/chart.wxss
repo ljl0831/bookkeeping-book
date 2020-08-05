@@ -53,11 +53,11 @@
 }
 
 .c-item.shouru{
-  border-color: #e4393c;
+ border-color: #00B26A;
 }
 
 .c-item.zhichu{
-  border-color: #00B26A;
+   border-color: #e4393c;
 }
 
 .date-title,.money{
@@ -65,11 +65,11 @@
 }
 
 .money.shouru{
-  color: #e4393c;
+  color: #00B26A;
 }
 
 .money.zhichu{
-  color: #00B26A;
+  color: #e4393c;
 }
 
 .pie-box{
@@ -120,13 +120,13 @@
 
 .type-item-shouru{
   font-size: 28rpx;
-  color: #e4393c;
+  color: #00B26A;
   font-weight: bold;
 }
 
 .type-item-zhichu{
   font-size: 28rpx;
-  color: #00B26A;
+  color: #e4393c;
   font-weight: bold;
 }
 
